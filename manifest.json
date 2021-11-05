@@ -10,7 +10,7 @@
 		]
 	},
     "content_scripts": [{
-
+		"matches": ["https://*.sipd.kemendagri.go.id/*"]
     }],
 	"permissions": [
 		"activeTab",

@@ -1,4 +1,4 @@
-var identify = {
+var auth = {
     url: "",
     id_daerah: "",
     nama_daerah: "",

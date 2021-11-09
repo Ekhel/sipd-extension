@@ -3,5 +3,6 @@ var auth = {
     id_daerah: "",
     nama_daerah: "",
     user: "",
-    pass: ""
+    pass: "",
+    api_key: ""
 }

@@ -10,21 +10,28 @@
 			"js/jquery.min.js"
 		]
 	},
-    "content_scripts": [
-		{
-			"matches": ["https://*.sipd.kemendagri.go.id/*"],
-			"js": [
-				"js/jquery.min.js",
-				"auth.js"
-			],
-			"run_at": "document_end"
-    	},
+	"browser_action": {
+		"default_popup": "js/popup/login-dialog.html"
+	},
+	"content_scripts": [
 		{
 			"matches": [
 				"https://*.sipd.kemendagri.go.id/*"
 			],
 			"js": [
-				"js/src/start.js"
+				"js/jquery.min.js",
+				"auth.js"
+			],
+			"run_at": "document_end"
+		},
+		{
+			"matches": [
+				"https://*.sipd.kemendagri.go.id/*"
+			],
+			"js": [
+				"js/src/start.js",
+				"js/src/func.js",
+				"js/src/app.js"
 			],
 			"run_at": "document_start"
 		}
@@ -33,5 +40,5 @@
 		"activeTab",
 		"tabs"
 	],
-    "manifest_version": 2
+	"manifest_version": 2
 }

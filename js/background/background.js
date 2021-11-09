@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
     ) {
         console.log('Halaman sub kegiatan')
         var singkron_data = ''
-            + '<a class="fcbtn btn btn-danger" id="singkron_data_giat_lokal">'
+            + '<a class="fcbtn btn btn-danger" id="kirim_data_lokal">'
                 + '<i class="fa fa-cloud-download m-r-5"></i> <span>Kirim Program Kegiatan ke DB</span>'
             + '</a>';
         jQuery('#reset_submit').parent().append(singkron_data);
